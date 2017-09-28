@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.forwards.mathapp.MainActivity">
+
+    <TextView
+        android:text="My Calculator"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/header"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/no1"
+        android:gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:hint="Number one"
+        android:padding="10dp"
+        android:inputType="number"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginTop="28dp" />
+    <EditText
+        android:id="@+id/opt"
+        android:gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/no1"
+        android:padding="10dp"
+        android:hint="Operator (+,*,-,/)"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginTop="28dp" />
+    <EditText
+        android:id="@+id/no2"
+        android:gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/opt"
+        android:hint="Number 2"
+        android:padding="10dp"
+        android:inputType="number"
+        android:background="@drawable/rounded_edittext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_marginTop="30dp"
+        android:text="Find Answer"
+        android:onClick="result"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/no2"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
